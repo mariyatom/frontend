@@ -1,6 +1,7 @@
 import './App.css';
 import {useState} from 'react';
 import AXIOS from 'axios';
+import Viewimg from './viewimg';
 
 function App() {
   const [image,setImage]= useState({preview:'',data:''});
@@ -33,6 +34,7 @@ function App() {
       <button type='submit'>upload file</button>
       </form>
       <h3>{status}</h3>
+ <Viewimg/>
     </div>
   );
 }
